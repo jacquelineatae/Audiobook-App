@@ -1,17 +1,27 @@
 body {
-  background-image: linear-gradient(#3b1566, #5f4da8);
+  background-color: #D6E2EC;
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #d6d6ea;
+  color: #8A9CB4;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
 }
 
-.container-aplicativo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header {
+  background-color: #8A9CB4;
+  color: #D6E2EC;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Lilita One', sans-serif;
 }
 
 button {
@@ -19,32 +29,39 @@ button {
   color: inherit;
   border: none;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .music-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
-#informacoes-faixa {
+.music-container > img {
+  border-radius: 10px;
+}
+
+.track-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem 0 1rem 0;
   font-size: 1.5rem;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 
-#anterior, #proximo {
-  font-size: 3rem;
+#previous, #next {
+  font-size: 2rem;
 }
 
 #play-pause {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
-#container-botoes {
+.button-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
